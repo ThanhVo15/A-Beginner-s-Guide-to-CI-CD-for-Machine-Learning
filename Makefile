@@ -43,9 +43,9 @@ hf-login:
 
 # Push app and model files to Hugging Face
 push-hub:
-    huggingface-cli upload ThanhVo15/A-Beginner-s-Guide-to-CI-CD-for-Machine-Learning ./App --repo-type=space --commit-message="Sync App files"
-    huggingface-cli upload ThanhVo15/A-Beginner-s-Guide-to-CI-CD-for-Machine-LearningModel ./Model /Model --repo-type=space --commit-message="Sync Model"
-    huggingface-cli upload ThanhVo15/A-Beginner-s-Guide-to-CI-CD-for-Machine-Learning ./Results /Metrics --repo-type=space --commit-message="Sync Model"
+    huggingface-cli upload E/A-Beginner-s-Guide-to-CI-CD-for-Machine-Learning/ ./App --repo-type=space --commit-message="Sync App files"
+    huggingface-cli upload E/A-Beginner-s-Guide-to-CI-CD-for-Machine-Learning/ ./Model /Model --repo-type=space --commit-message="Sync Model"
+    huggingface-cli upload E/A-Beginner-s-Guide-to-CI-CD-for-Machine-Learning/ ./Results /Metrics --repo-type=space --commit-message="Sync Model"
 
 # Deploy to Hugging Face
 deploy: 
