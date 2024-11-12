@@ -48,4 +48,6 @@ push-hub:
     huggingface-cli upload ThanhVo15/A-Beginner-s-Guide-to-CI-CD-for-Machine-Learning ./Results /Metrics --repo-type=space --commit-message="Sync Model"
 
 # Deploy to Hugging Face
-deploy: hf-login push-hub
+deploy: 
+    hf-login
+    push-hub
