@@ -27,7 +27,7 @@ update-branch:
 	git add report.md
 	git commit -m "Update with new results"
 	git push origin main
-	
+
 hf-login:
     git pull origin update
     git switch update
