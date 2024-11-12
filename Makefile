@@ -27,6 +27,17 @@ update-branch:
 	git add report.md
 	git commit -m "Update with new results"
 	git push origin main
+hf-login:
+    git pull origin update
+    git switch update
+    pip install -U "huggingface_hub[cli]"
+    huggingface-cli login --token $(HF) --add-to-git-credential
 
+push-hub:
+    huggingface-cli upload ThanhVo15/A-Beginner-s-Guide-to-CI-CD-for-Machine-Learning ./App --repo-type=space --commit-message="Sync App files"
+    huggingface-cli upload ThanhVo15/A-Beginner-s-Guide-to-CI-CD-for-Machine-LearningModel ./Model /Model --repo-type=space --commit-message="Sync Model"
+    huggingface-cli upload ThanhVo15/A-Beginner-s-Guide-to-CI-CD-for-Machine-Learning ./Results /Metrics --repo-type=space --commit-message="Sync Model"
+
+deploy: hf-login push-hub
 
 
