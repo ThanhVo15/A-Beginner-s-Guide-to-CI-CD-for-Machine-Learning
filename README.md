@@ -91,3 +91,14 @@ For detailed requirements, see `requirements.txt`.
 ## Conclusion
 
 This project demonstrates how to set up a CI/CD pipeline for machine learning using GitHub Actions, automating the model lifecycle from training to deployment. This setup helps ensure that every update is automatically evaluated and deployed, saving time and effort.
+
+-----
+title: Drug Classification
+emoji: 🐠
+colorFrom: gray
+colorTo: blue
+sdk: gradio
+sdk_version: 5.5.0
+app_file: app.py
+pinned: false
+license: apache-2.0
