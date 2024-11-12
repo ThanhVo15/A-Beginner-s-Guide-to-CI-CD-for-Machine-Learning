@@ -16,6 +16,8 @@ jobs:
       - uses: iterative/setup-cml@v2
       - name: Install Packages
         run: make install
+      - name: Install Black
+        run: pip install black
       - name: Format
         run: make format
       - name: Train
