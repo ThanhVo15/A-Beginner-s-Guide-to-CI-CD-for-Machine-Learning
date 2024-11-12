@@ -22,8 +22,10 @@ commit:
 	git push origin main
 
 update-branch:
-	git config --global user.name $(USER_NAME)
-	git config --global user.email $(USER_EMAIL)
-	git commit -am "Update with new results"
-	git push --force origin HEAD:update
+	git config user.name "$(USER_NAME)"
+	git config user.email "$(USER_EMAIL)"
+	git add report.md
+	git commit -m "Update with new results"
+	git push origin main
+
 
